@@ -1,7 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Layout = ({ children }) => <div>{children}</div>;
+import 'typeface-black-ops-one';
+import '../styles/app.css';
+import '../styles/layout.css';
+
+const Layout = ({ children }) => <div className="layout">{children}</div>;
 
 Layout.propTypes = {
     children: PropTypes.node.isRequired,
