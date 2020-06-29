@@ -19,7 +19,8 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
+    "prettier": "2.0.5",
+    "typeface-black-ops-one": "0.0.72"
   },
   "keywords": [
     "gatsby"
