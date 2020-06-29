@@ -4,7 +4,7 @@ module.exports = {
         description:
             "Hi! I'm Fatih. I'm a front-end developer based in İzmir, Turkey.",
         url: 'https://fatihcan.dev',
-        image: `${__dirname}/src/images/meta-image.jpg`,
+        image: '/meta-image.jpg',
         twitterUsername: '@fatihcandev',
     },
     plugins: [
