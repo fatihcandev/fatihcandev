@@ -8,11 +8,13 @@ import Mail from './icons/mail';
 import SidebarItem from './sidebar-item';
 import LinkComp from './link';
 import Button from './button';
+import Instagram from './icons/instagram';
 
 const links = {
     github: 'https://github.com/fatihcandev',
     linkedin: 'https://linkedin.com/in/fatihcandev',
     twitter: 'https://twitter.com/fatihcandev',
+    instagram: 'https://instagram.com/fatihcdev',
     mail: 'mailto:contact@fatihcan.dev',
 };
 
@@ -41,6 +43,9 @@ const Sidebar = ({ sidebarOpen, onSidebarClose }) => (
                 </LinkComp>
                 <LinkComp href={links.twitter} title="Go to my Twitter">
                     <Twitter />
+                </LinkComp>
+                <LinkComp href={links.instagram} title="Go to my Instagram">
+                    <Instagram />
                 </LinkComp>
                 <LinkComp href={links.mail} title="Mail me">
                     <Mail />
