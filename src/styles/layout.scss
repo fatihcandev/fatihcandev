@@ -5,16 +5,4 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-
-    @media ($md) {
-        grid-template-columns: 30% 70%;
-    }
-
-    @media ($lg) {
-        grid-template-columns: 25% 75%;
-    }
-
-    @media ($xl) {
-        grid-template-columns: 20% 80%;
-    }
 }

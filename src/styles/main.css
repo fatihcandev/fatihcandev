@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .main {
+    padding-left: 200px;
+  }
+}
 
 .header {
   display: flex;

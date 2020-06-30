@@ -76,6 +76,8 @@
 @media (min-width: 768px) {
   .sidebar, .sidebarMobile {
     display: grid;
+    position: fixed;
+    min-height: 100vh;
   }
 }
 

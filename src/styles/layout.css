@@ -4,20 +4,5 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
 }
-@media (min-width: 768px) {
-  .layout {
-    grid-template-columns: 30% 70%;
-  }
-}
-@media (min-width: 1024px) {
-  .layout {
-    grid-template-columns: 25% 75%;
-  }
-}
-@media (min-width: 1280px) {
-  .layout {
-    grid-template-columns: 20% 80%;
-  }
-}
 
 /*# sourceMappingURL=layout.css.map */
