@@ -29,7 +29,7 @@ const IndexPage = ({ data }) => {
                         alt="fatih can"
                     />
                     <TextBody className="text">
-                        Hi. I'm Fatih. I'm 22 years old. I'm a front-end
+                        Hi. I'm Fatih. I'm 23 years old. I'm a front-end
                         developer. Currently living in İzmir, Turkey and working
                         at{' '}
                         <LinkComp
