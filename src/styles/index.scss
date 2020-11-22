@@ -150,7 +150,7 @@ a {
 
     a {
       @extend .text-400;
-      font-size: 16px;
+      font-size: 18px;
       color: $white;
       position: relative;
       padding-bottom: 5px;
@@ -283,7 +283,7 @@ a {
       order: 1;
       p {
         @extend .text-300;
-        font-size: 16px;
+        font-size: 18px;
         color: $white;
         line-height: 30px;
         text-align: justify;
@@ -312,7 +312,7 @@ a {
 
   span {
     @extend .text-300;
-    font-size: 16px;
+    font-size: 18px;
     color: $white;
   }
 }

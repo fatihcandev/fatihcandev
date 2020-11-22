@@ -344,7 +344,7 @@ a {
   }
 }
 .menu-m .items a {
-  font-size: 16px;
+  font-size: 18px;
   color: #fff;
   position: relative;
   padding-bottom: 5px;
@@ -460,7 +460,7 @@ a {
   order: 1;
 }
 .about .content .paragraph p {
-  font-size: 16px;
+  font-size: 18px;
   color: #fff;
   line-height: 30px;
   text-align: justify;
@@ -486,7 +486,7 @@ a {
   padding-bottom: 16px;
 }
 .copyright span {
-  font-size: 16px;
+  font-size: 18px;
   color: #fff;
 }
 
