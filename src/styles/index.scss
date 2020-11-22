@@ -29,8 +29,6 @@ a {
     align-items: center;
     margin: auto;
     cursor: default;
-    z-index: 9999;
-    position: unset;
 
     h1 {
       @extend .text-400;
