@@ -7,6 +7,10 @@ html {
 
 body {
   background-color: $blue;
+
+  &.no-scroll {
+    overflow-y: hidden;
+  }
 }
 
 a {

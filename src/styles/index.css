@@ -208,6 +208,9 @@ html {
 body {
   background-color: #3f72af;
 }
+body.no-scroll {
+  overflow-y: hidden;
+}
 
 a {
   color: inherit;
