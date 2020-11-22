@@ -34,9 +34,13 @@ a {
 
     h1 {
       @extend .text-400;
-      font-size: 60px;
+      font-size: 32px;
       text-align: center;
       color: $light-blue;
+
+      @media ($md) {
+        font-size: 50px;
+      }
 
       @media ($lg) {
         font-size: 75px;
@@ -49,9 +53,13 @@ a {
 
     span {
       @extend .text-300;
-      font-size: 30px;
+      font-size: 18px;
       text-align: center;
       color: $light-blue;
+
+      @media ($md) {
+        font-size: 25px;
+      }
 
       @media ($lg) {
         font-size: 37.5px;
@@ -85,7 +93,7 @@ a {
 }
 
 .menu-m {
-  @extend .absolute;
+  @extend .fixed;
   background-color: $dark-blue;
   display: none;
   justify-content: center;
@@ -94,6 +102,7 @@ a {
   opacity: 0;
 
   @media ($md) {
+    position: absolute;
     display: flex;
     bottom: unset;
     background-color: transparent;
@@ -119,7 +128,7 @@ a {
     display: grid;
     grid-template-columns: repeat(4, max-content);
     grid-template-rows: auto;
-    column-gap: 16px;
+    justify-content: space-evenly;
     align-items: center;
     padding-bottom: 16px;
 

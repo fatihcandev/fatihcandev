@@ -163,7 +163,7 @@ table {
   font-family: "kumbh-bold";
 }
 
-.absolute, .chevron-down-container, .menu-m .social, .menu-m, .navbar {
+.absolute, .chevron-down-container, .menu-m .social, .navbar {
   position: absolute;
   top: 0;
   left: 0;
@@ -171,7 +171,7 @@ table {
   bottom: 0;
 }
 
-.fixed, .social {
+.fixed, .social, .menu-m {
   position: fixed;
   top: 0;
   left: 0;
@@ -232,9 +232,14 @@ a {
   position: unset;
 }
 .hero .label h1 {
-  font-size: 60px;
+  font-size: 32px;
   text-align: center;
   color: #dbe2ef;
+}
+@media (min-width: 768px) {
+  .hero .label h1 {
+    font-size: 50px;
+  }
 }
 @media (min-width: 1000px) {
   .hero .label h1 {
@@ -247,9 +252,14 @@ a {
   }
 }
 .hero .label span {
-  font-size: 30px;
+  font-size: 18px;
   text-align: center;
   color: #dbe2ef;
+}
+@media (min-width: 768px) {
+  .hero .label span {
+    font-size: 25px;
+  }
 }
 @media (min-width: 1000px) {
   .hero .label span {
@@ -292,6 +302,7 @@ a {
 }
 @media (min-width: 768px) {
   .menu-m {
+    position: absolute;
     display: flex;
     bottom: unset;
     background-color: transparent;
@@ -314,7 +325,7 @@ a {
   display: grid;
   grid-template-columns: repeat(4, max-content);
   grid-template-rows: auto;
-  column-gap: 16px;
+  justify-content: space-evenly;
   align-items: center;
   padding-bottom: 16px;
 }
