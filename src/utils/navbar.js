@@ -16,4 +16,5 @@ closer.addEventListener("click", () => {
 
 navItem.addEventListener("click", () => {
   navbar.className = "menu-m";
+  body.className = "";
 });
