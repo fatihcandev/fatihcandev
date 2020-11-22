@@ -1,0 +1,55 @@
+@import "./fonts";
+@import "./variables";
+
+.text-300 {
+  font-family: "kumbh-light";
+}
+
+.text-400 {
+  font-family: "kumbh-regular";
+}
+
+.text-700 {
+  font-family: "kumbh-bold";
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.animated-chevron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: $white;
+  border-radius: 50px;
+  animation: up-and-down 1s infinite ease-in-out alternate;
+
+  img {
+    width: 25px;
+  }
+
+  @keyframes up-and-down {
+    from {
+      transform: translateY(0px);
+    }
+
+    to {
+      transform: translateY(10px);
+    }
+  }
+}
