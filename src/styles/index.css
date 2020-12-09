@@ -228,8 +228,6 @@ a {
   align-items: center;
   margin: auto;
   cursor: default;
-  z-index: 9999;
-  position: unset;
 }
 .hero .label h1 {
   font-size: 32px;
@@ -303,7 +301,6 @@ a {
 @media (min-width: 768px) {
   .menu-m {
     position: absolute;
-    display: flex;
     bottom: unset;
     background-color: transparent;
     opacity: 1;
