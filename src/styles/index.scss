@@ -96,10 +96,10 @@ a {
   display: none;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
   opacity: 0;
 
   @media ($md) {
+    display: flex;
     position: absolute;
     bottom: unset;
     background-color: transparent;
