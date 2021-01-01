@@ -197,6 +197,8 @@ a {
 
 .social {
   @extend .fixed;
+  top: 16px;
+  right: 16px;
   bottom: unset;
   left: unset;
   display: none;
@@ -206,6 +208,7 @@ a {
   justify-content: space-between;
   align-items: center;
   background-color: $dark-blue;
+  border-radius: 6px;
 
   @media ($md) {
     display: flex;
