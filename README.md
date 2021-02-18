@@ -20,5 +20,12 @@
 # Hi there! 👋
 #### I'm Fatih. I'm a front-end developer 👨‍💻 Currently I work at <b>[DIGIEGGS](https://linkedin.com/company/digieggs)</b>. Check out my personal website  👉  https://fatihcan.dev
 
+# 🧰 Tools and technologies
+![](https://img.shields.io/badge/-HTML5-%23E44D27?style=flat-square&logo=html5&logoColor=ffffff)
+![](https://img.shields.io/badge/-CSS3-%231572B6?style=flat-square&logo=css3)
+![](https://img.shields.io/badge/-SCSS-CF649A?style=flat-square&logo=sass&logoColor=ffffff)
+![](https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat-square&logo=javascript&logoColor=000000&labelColor=%23F7DF1C&color=%23FFCE5A)
+![](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=ffffff)
+![](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=ffffff)
 
 <img align="left" alt="fatihcandev's GitHub Stats" src="https://github-readme-stats.codestackr.vercel.app/api?username=fatihcandev&show_icons=true&hide_border=true" />
