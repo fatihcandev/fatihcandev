@@ -30,5 +30,3 @@
 ![](https://img.shields.io/badge/-GraphQL-E00097?style=flat-square&logo=graphql&logoColor=ffffff)
 ![](https://img.shields.io/badge/-Git-E84D31?style=flat-square&logo=git&logoColor=ffffff)
 ![](https://img.shields.io/badge/-Jest-C21325?style=flat-square&logo=jest&logoColor=ffffff)
-
-<img align="left" alt="fatihcandev's GitHub Stats" src="https://github-readme-stats.codestackr.vercel.app/api?username=fatihcandev&show_icons=true&hide_border=true" />
