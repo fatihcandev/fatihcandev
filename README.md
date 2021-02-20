@@ -21,7 +21,7 @@
 
 #### I'm Fatih. I'm a front-end developer 👨‍💻 Currently I work at <b>[DIGIEGGS](https://linkedin.com/company/digieggs)</b>. Check out my personal website 👉 https://fatihcan.dev
 
-# 🧰 Tools and technologies
+# 🧰 I'm familiar with
 
 ![](https://img.shields.io/badge/-HTML5-%23E44D27?style=flat-square&logo=html5&logoColor=ffffff)
 ![](https://img.shields.io/badge/-CSS3-%231572B6?style=flat-square&logo=css3)
@@ -32,3 +32,8 @@
 ![](https://img.shields.io/badge/-GraphQL-E00097?style=flat-square&logo=graphql&logoColor=ffffff)
 ![](https://img.shields.io/badge/-Git-E84D31?style=flat-square&logo=git&logoColor=ffffff)
 ![](https://img.shields.io/badge/-Jest-C21325?style=flat-square&logo=jest&logoColor=ffffff)
+
+# 🧰 Tech stack of the website
+![](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=ffffff)
+![](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=ffffff)
+![](https://img.shields.io/badge/-Chakra%20UI-3CC7BE?style=flat-squaret&logoColor=ffffff)
