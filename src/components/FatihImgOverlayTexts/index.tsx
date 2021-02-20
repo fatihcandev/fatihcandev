@@ -15,7 +15,7 @@ const FatihImgOverlayTexts = ({
       direction="column"
       pos="absolute"
       top={100}
-      right={isInner ? 0 : [null, null, -199, -353]}
+      right={isInner ? 0 : [null, null, -223, -396]}
       align={isInner ? "flex-end" : "flex-start"}
     >
       {texts.map((text, index) => (
