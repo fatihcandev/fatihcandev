@@ -18,6 +18,7 @@ const FatihImg = () => {
         w="100%"
         h="100%"
         objectFit="cover"
+        alt="Fatih Can"
       />
       <FatihImgOverlayTexts texts={["Fa", "Ca", "Front", "Dev"]} isInner />
       <FatihImgOverlayTexts texts={["tih", "n", "End", "eloper"]} />
