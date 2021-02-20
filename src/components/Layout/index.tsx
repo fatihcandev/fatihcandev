@@ -20,7 +20,13 @@ const Layout = ({ children }: ILayoutProps) => {
   return (
     <Box w="100vw" h="100vh" pos="fixed" bg="primary">
       <Navbar onOpenDrawer={onOpenDrawer} />
-      <Box display={["none", null, "block"]} pos="fixed" left={4} bottom={4}>
+      <Box
+        display={["none", null, "block"]}
+        pos="fixed"
+        left={4}
+        bottom={4}
+        zIndex={3}
+      >
         <SocialLinks />
       </Box>
       <Box pos="fixed" left={0} right={0} bottom={4} zIndex={2}>
