@@ -21,7 +21,7 @@ const TextWithAnimatedBg = ({
       pos="relative"
       _hover={{
         "& .bg": {
-          bottom: 0,
+          height: "100%",
         },
         "& .text": {
           color: "white",
@@ -32,10 +32,9 @@ const TextWithAnimatedBg = ({
         className="bg"
         pos="absolute"
         w="100%"
-        h="100%"
-        bottom="-26.5px"
+        h="0%"
         bg={bg}
-        transition="bottom 0.3s ease-out"
+        transition="height 0.3s ease-out"
         zIndex={1}
       />
 
