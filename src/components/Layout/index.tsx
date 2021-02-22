@@ -4,7 +4,6 @@ import { Box, useDisclosure } from "@chakra-ui/react"
 import SocialLinks from "../SocialLinks"
 import DrawerComponent from "../DrawerComponent"
 import Navbar from "../Navbar"
-import Footer from "../Footer"
 
 interface ILayoutProps {
   children: React.ReactNode
