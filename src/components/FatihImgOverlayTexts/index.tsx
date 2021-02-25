@@ -1,5 +1,5 @@
 import React from "react"
-import { Flex, Text } from "@chakra-ui/react"
+import { Flex, Heading } from "@chakra-ui/react"
 
 interface IFatihImgOverlayTextProps {
   isInner?: boolean
@@ -19,14 +19,14 @@ const FatihImgOverlayTexts = ({
       align={isInner ? "flex-end" : "flex-start"}
     >
       {texts.map((text, index) => (
-        <Text
+        <Heading
           key={index}
           fontSize={[null, null, "7xl", "9xl"]}
           lineHeight="1"
           color={isInner ? "white" : undefined}
         >
           {text}
-        </Text>
+        </Heading>
       ))}
     </Flex>
   )
