@@ -3,6 +3,8 @@ import { Box, Image } from "@chakra-ui/react"
 
 import FatihImgOverlayTexts from "../FatihImgOverlayTexts"
 
+import styles from "./FatihImg.module.css"
+
 const FatihImg = () => {
   return (
     <Box
@@ -11,6 +13,7 @@ const FatihImg = () => {
       h={[null, null, 450, 600]}
       pos="relative"
       display={["none", null, "block"]}
+      className={styles.animated}
     >
       <Image
         src="/images/fatih.jpg"
@@ -20,8 +23,15 @@ const FatihImg = () => {
         objectFit="cover"
         alt="Fatih Can"
       />
-      <FatihImgOverlayTexts texts={["Fa", "Ca", "Front", "Dev"]} isInner />
-      <FatihImgOverlayTexts texts={["tih", "n", "End", "eloper"]} />
+      <FatihImgOverlayTexts
+        texts={["Fa", "Ca", "Front", "Dev"]}
+        isInner
+        className={styles.animated}
+      />
+      <FatihImgOverlayTexts
+        texts={["tih", "n", "End", "eloper"]}
+        className={styles.animated}
+      />
     </Box>
   )
 }

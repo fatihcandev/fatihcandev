@@ -4,11 +4,13 @@ import { Flex, Heading } from "@chakra-ui/react"
 interface IFatihImgOverlayTextProps {
   isInner?: boolean
   texts: string[]
+  className?: string
 }
 
 const FatihImgOverlayTexts = ({
   isInner,
   texts,
+  className,
 }: IFatihImgOverlayTextProps) => {
   return (
     <Flex
@@ -24,6 +26,7 @@ const FatihImgOverlayTexts = ({
           fontSize={[null, null, "7xl", "9xl"]}
           lineHeight="1"
           color={isInner ? "white" : undefined}
+          className={className}
         >
           {text}
         </Heading>

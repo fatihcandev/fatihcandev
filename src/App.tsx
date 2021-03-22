@@ -6,7 +6,7 @@ import Home from "./views/Home"
 import { customTheme, fontFace } from "./theme"
 
 export const App = () => (
-  <ChakraProvider theme={customTheme}>
+  <ChakraProvider theme={customTheme} resetCSS>
     <Global styles={fontFace} />
     <Home />
   </ChakraProvider>

@@ -28,9 +28,6 @@ const Layout = ({ children }: ILayoutProps) => {
       >
         <SocialLinks />
       </Box>
-      {/* <Box pos="fixed" left={0} right={0} bottom={4} zIndex={2}>
-        <Footer />
-      </Box> */}
       {children}
       {isDrawerOpen && (
         <DrawerComponent isOpen={isDrawerOpen} onClose={onCloseDrawer} />
