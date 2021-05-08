@@ -1,4 +1,3 @@
-import React from "react"
 import { Box, useDisclosure } from "@chakra-ui/react"
 
 import SocialLinks from "../SocialLinks"

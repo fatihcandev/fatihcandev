@@ -1,4 +1,3 @@
-import React from "react"
 import { Box, Flex, IconButton } from "@chakra-ui/react"
 import { HamburgerIcon } from "@chakra-ui/icons"
 

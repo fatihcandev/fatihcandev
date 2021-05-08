@@ -1,4 +1,3 @@
-import React from "react"
 import { Box, Image } from "@chakra-ui/react"
 
 import FatihImgOverlayTexts from "../FatihImgOverlayTexts"

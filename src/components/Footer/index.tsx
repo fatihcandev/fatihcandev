@@ -1,4 +1,3 @@
-import React from "react"
 import { Flex, HStack, Link, Text, useMediaQuery } from "@chakra-ui/react"
 
 import ChakraUILogo from "../ChakraUILogo"

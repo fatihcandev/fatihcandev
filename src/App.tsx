@@ -1,4 +1,3 @@
-import * as React from "react"
 import { Global } from "@emotion/react"
 import { ChakraProvider } from "@chakra-ui/react"
 

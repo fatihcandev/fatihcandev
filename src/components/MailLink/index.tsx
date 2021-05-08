@@ -1,5 +1,3 @@
-import React from "react"
-
 import TextWithAnimatedBg from "../TextWithAnimatedBg"
 
 const MailLink = () => {

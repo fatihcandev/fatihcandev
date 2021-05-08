@@ -1,4 +1,3 @@
-import React from "react"
 import { Stack, Tooltip } from "@chakra-ui/react"
 
 import TextWithAnimatedBg from "../TextWithAnimatedBg"
