@@ -2,8 +2,10 @@ import { extendTheme, theme } from "@chakra-ui/react"
 
 const customTheme = extendTheme({
   fonts: {
-    body: "Inter, sans-serif",
-    heading: "Inter, sans-serif",
+    body:
+      "-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;",
+    heading:
+      "-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;",
   },
   colors: {
     ...theme.colors,
