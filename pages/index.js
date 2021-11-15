@@ -4,7 +4,8 @@ import {
   LinkedinFilled,
   MediumSquareFilled,
 } from '@ant-design/icons'
-
+import NextImage from 'next/image'
+import { getPlaiceholder } from 'plaiceholder'
 import { keyframes, styled } from 'stitches.config'
 import shallow from 'zustand/shallow'
 
@@ -13,11 +14,12 @@ import { resumeUrl, githubUrl, linkedinUrl, mediumUrl } from 'constant/links'
 import { useStore } from 'hooks'
 import { Moon, Sun } from 'icons'
 
-export default function Home() {
+export default function Home({ imageProps }) {
   const { theme, toggleTheme } = useStore(
     state => ({ theme: state.theme, toggleTheme: state.toggleTheme }),
     shallow
   )
+
   return (
     <Container>
       <Greeting>
@@ -40,7 +42,7 @@ export default function Home() {
         </Actions>
       </Greeting>
       <ImageContainer>
-        <img src="/images/floating.png" />
+        <NextImage {...imageProps} placeholder="blur" />
       </ImageContainer>
       <DarkModeToggle onClick={toggleTheme}>
         {theme === 'dark' ? <Sun /> : <Moon />}
@@ -49,8 +51,19 @@ export default function Home() {
   )
 }
 
-export async function getStaticProps() {
-  return { props: {} }
+export const getStaticProps = async () => {
+  const { base64, img } = await getPlaiceholder('/images/floating.png')
+
+  return {
+    props: {
+      imageProps: {
+        ...img,
+        layout: 'fill',
+        objectFit: 'contain',
+        blurDataURL: base64,
+      },
+    },
+  }
 }
 
 const Container = styled('div', {
@@ -111,7 +124,17 @@ const float = keyframes({
 const ImageContainer = styled('div', {
   widthPercent: 100,
   maxWidth: 500,
+  pt: '100%',
   animation: `${float} 1.5s ease-in-out infinite alternate-reverse`,
+  mt: 32,
+
+  '@md': {
+    pt: '50%',
+  },
+
+  '@xl': {
+    pt: '25%',
+  },
 })
 
 const DarkModeToggle = styled('button', {
