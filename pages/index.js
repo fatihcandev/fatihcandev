@@ -57,7 +57,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       imageProps: {
-        ...img,
+        src: img.src,
         layout: 'fill',
         objectFit: 'contain',
         blurDataURL: base64,
