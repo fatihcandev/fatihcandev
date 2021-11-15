@@ -1,4 +1,10 @@
 module.exports = {
+  env: {
+    browser: true,
+    commonjs: true,
+    es2021: true,
+    node: true,
+  },
   plugins: ['prettier'],
   extends: ['next', 'next/core-web-vitals', 'prettier'],
   rules: {
