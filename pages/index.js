@@ -23,9 +23,10 @@ export default function Home({ imageProps }) {
   return (
     <Container>
       <Greeting>
-        <Text>Welcome!</Text>
-        <Text>I&apos;m Fatih. Hope you are well.</Text>
-        <Text>I&apos;m a front end developer based in İzmir, Turkey.</Text>
+        <Text>Welcome! Hope you are well.</Text>
+        <Text>
+          I&apos;m Fatih. I&apos;m a front end developer based in İzmir, Turkey.
+        </Text>
         <Actions>
           <LinkWithIcon icon={<GithubOutlined />} href={githubUrl}>
             Review my code
