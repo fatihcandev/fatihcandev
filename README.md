@@ -38,6 +38,5 @@
 
 # 🧰 Tech stack of the website
 
-![](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=ffffff)
-![](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=ffffff)
-![](https://img.shields.io/badge/-Chakra%20UI-3CC7BE?style=flat-squaret&logoColor=ffffff)
+![](https://img.shields.io/badge/-Next.js-010100?style=flat-square&logo=next.js&logoColor=ffffff)
+![](https://img.shields.io/badge/-Stitches-e4defc?style=flat-square&logo=stitches&logoColor=ffffff)
