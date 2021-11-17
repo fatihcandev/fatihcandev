@@ -53,7 +53,7 @@ export default function Home({ imageProps }) {
 }
 
 export const getStaticProps = async () => {
-  const { base64, img } = await getPlaiceholder('/images/floating.webp')
+  const { base64, img } = await getPlaiceholder('/images/floating.png')
 
   return {
     props: {
