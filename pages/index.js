@@ -1,3 +1,4 @@
+import { useLayoutEffect, useState } from 'react'
 import {
   FileTextOutlined,
   GithubOutlined,
@@ -6,22 +7,30 @@ import {
 } from '@ant-design/icons'
 import NextImage from 'next/image'
 import { getPlaiceholder } from 'plaiceholder'
-import { keyframes, styled } from 'stitches.config'
-import shallow from 'zustand/shallow'
+import { darkTheme, keyframes, styled } from 'stitches.config'
 
 import { LinkWithIcon } from 'components'
 import { resumeUrl, githubUrl, linkedinUrl, mediumUrl } from 'constant/links'
-import { useStore } from 'hooks'
 import { Moon, Sun } from 'icons'
 
 export default function Home({ imageProps }) {
-  const { theme, toggleTheme } = useStore(
-    state => ({ theme: state.theme, toggleTheme: state.toggleTheme }),
-    shallow
-  )
+  const [theme, setTheme] = useState('light')
+
+  useLayoutEffect(() => {
+    const themeStorage = localStorage.getItem('theme')
+    if (themeStorage) setTheme(themeStorage)
+  }, [])
+
+  const toggleTheme = () => {
+    setTheme(prev => {
+      const latest = prev === 'light' ? 'dark' : 'light'
+      localStorage.setItem('theme', latest)
+      return latest
+    })
+  }
 
   return (
-    <Container>
+    <Container className={theme === 'dark' ? darkTheme : ''}>
       <Greeting>
         <Text>Welcome! Hope you are well.</Text>
         <Text>
@@ -43,7 +52,7 @@ export default function Home({ imageProps }) {
         </Actions>
       </Greeting>
       <ImageContainer>
-        <NextImage {...imageProps} placeholder="blur" />
+        <NextImage {...imageProps} placeholder="blur" priority />
       </ImageContainer>
       <DarkModeToggle onClick={toggleTheme}>
         {theme === 'dark' ? <Sun /> : <Moon />}
@@ -128,6 +137,7 @@ const ImageContainer = styled('div', {
   pt: '100%',
   animation: `${float} 1.5s ease-in-out infinite alternate-reverse`,
   mt: 32,
+  position: 'relative',
 
   '@md': {
     pt: '50%',
