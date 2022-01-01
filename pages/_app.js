@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Fatih Can | Front End Developer</title>
       </Head>
-      <ThemeProvider defaultTheme="system">
+      <ThemeProvider>
         <Component {...pageProps} />
       </ThemeProvider>
     </>

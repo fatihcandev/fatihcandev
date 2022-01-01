@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import NextImage from 'next/image'
 import { getPlaiceholder } from 'plaiceholder'
 import { useTheme } from 'next-themes'
@@ -10,17 +10,11 @@ import { Moon, Sun } from 'icons'
 
 export default function Home({ imageProps }) {
   const [mounted, setMounted] = useState(false)
-  const { systemTheme, theme, setTheme } = useTheme()
+  const { theme, setTheme } = useTheme()
   const isDark = theme === 'dark'
-
-  useLayoutEffect(() => {
-    if (systemTheme === 'dark') setTheme(systemTheme)
-  }, [setTheme, systemTheme])
 
   useEffect(() => {
     setMounted(true)
-
-    return () => setMounted(false)
   }, [])
 
   function toggleTheme() {
