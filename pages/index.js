@@ -1,34 +1,14 @@
-import { useLayoutEffect, useState } from 'react'
-import {
-  FileTextOutlined,
-  GithubOutlined,
-  LinkedinFilled,
-  MediumSquareFilled,
-} from '@ant-design/icons'
 import NextImage from 'next/image'
 import { getPlaiceholder } from 'plaiceholder'
 import { darkTheme, keyframes, styled } from 'stitches.config'
 
 import { LinkWithIcon } from 'components'
-import { resumeUrl, githubUrl, linkedinUrl, mediumUrl } from 'constant/links'
+import { links } from 'constant'
+import { useTheme } from 'hooks'
 import { Moon, Sun } from 'icons'
 
 export default function Home({ imageProps }) {
-  const [theme, setTheme] = useState('light')
-
-  useLayoutEffect(() => {
-    const themeStorage = localStorage.getItem('theme')
-    if (themeStorage) setTheme(themeStorage)
-  }, [])
-
-  const toggleTheme = () => {
-    setTheme(prev => {
-      const latest = prev === 'light' ? 'dark' : 'light'
-      localStorage.setItem('theme', latest)
-      return latest
-    })
-  }
-
+  const { theme, toggleTheme } = useTheme()
   return (
     <Container className={theme === 'dark' ? darkTheme : ''}>
       <Greeting>
@@ -37,18 +17,11 @@ export default function Home({ imageProps }) {
           I&apos;m Fatih. I&apos;m a front end developer based in İzmir, Turkey.
         </Text>
         <Actions>
-          <LinkWithIcon icon={<GithubOutlined />} href={githubUrl}>
-            Review my code
-          </LinkWithIcon>
-          <LinkWithIcon icon={<FileTextOutlined />} href={resumeUrl}>
-            Check out my resume
-          </LinkWithIcon>
-          <LinkWithIcon icon={<LinkedinFilled />} href={linkedinUrl}>
-            Check out my profile
-          </LinkWithIcon>
-          <LinkWithIcon icon={<MediumSquareFilled />} href={mediumUrl}>
-            Read my blog
-          </LinkWithIcon>
+          {links.map((link, i) => (
+            <LinkWithIcon key={i} icon={link.icon} href={link.href}>
+              {link.label}
+            </LinkWithIcon>
+          ))}
         </Actions>
       </Greeting>
       <ImageContainer>
