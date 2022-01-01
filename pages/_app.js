@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { ThemeProvider } from 'next-themes'
 
 import { globalStyles } from 'styles/globals'
 
@@ -10,7 +11,9 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Fatih Can | Front End Developer</title>
       </Head>
-      <Component {...pageProps} />
+      <ThemeProvider defaultTheme="system">
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   )
 }

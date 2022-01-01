@@ -1,16 +1,36 @@
+import { useEffect, useLayoutEffect, useState } from 'react'
 import NextImage from 'next/image'
 import { getPlaiceholder } from 'plaiceholder'
+import { useTheme } from 'next-themes'
 import { darkTheme, keyframes, styled } from 'stitches.config'
 
 import { LinkWithIcon } from 'components'
 import { links } from 'constant'
-import { useTheme } from 'hooks'
 import { Moon, Sun } from 'icons'
 
 export default function Home({ imageProps }) {
-  const { theme, toggleTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+  const { systemTheme, theme, setTheme } = useTheme()
+  const isDark = theme === 'dark'
+
+  useLayoutEffect(() => {
+    setTheme(systemTheme)
+  }, [setTheme, systemTheme])
+
+  useEffect(() => {
+    setMounted(true)
+
+    return () => setMounted(false)
+  }, [])
+
+  function toggleTheme() {
+    setTheme(isDark ? 'light' : 'dark')
+  }
+
+  if (!mounted) return null
+
   return (
-    <Container className={theme === 'dark' ? darkTheme : ''}>
+    <Container className={isDark ? darkTheme : ''}>
       <Greeting>
         <Text>Welcome! Hope you are well.</Text>
         <Text>
@@ -28,7 +48,7 @@ export default function Home({ imageProps }) {
         <NextImage {...imageProps} placeholder="blur" priority />
       </ImageContainer>
       <DarkModeToggle onClick={toggleTheme}>
-        {theme === 'dark' ? <Sun /> : <Moon />}
+        {isDark ? <Sun /> : <Moon />}
       </DarkModeToggle>
     </Container>
   )
