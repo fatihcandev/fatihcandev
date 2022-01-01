@@ -14,7 +14,7 @@ export default function Home({ imageProps }) {
   const isDark = theme === 'dark'
 
   useLayoutEffect(() => {
-    setTheme(systemTheme)
+    if (systemTheme === 'dark') setTheme(systemTheme)
   }, [setTheme, systemTheme])
 
   useEffect(() => {
