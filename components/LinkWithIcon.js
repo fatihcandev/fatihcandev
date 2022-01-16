@@ -14,14 +14,11 @@ export default LinkWithIcon
 const Container = styled('a', {
   display: 'flex',
   alignItems: 'center',
+  gap: 6,
   fontSize: 24,
   lineHeight: '32px',
   transition: 'color 0.3s ease',
   color: '$text',
-
-  '& svg': {
-    mr: 6,
-  },
 
   '&:hover': {
     color: '$blue',
