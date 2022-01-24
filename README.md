@@ -19,7 +19,7 @@
 
 # 👋 Hi there!
 
-#### I'm Fatih. I'm a front-end developer 👨‍💻 Currently I work at <b>[90Pixel](https://linkedin.com/company/90pixel)</b>. Check out my personal website 👉 https://fatihcan.dev
+#### I'm Fatih. I'm a front-end developer 👨‍💻 Check out my personal website 👉 https://fatihcan.dev
 
 # 🧰 I'm familiar with
 
