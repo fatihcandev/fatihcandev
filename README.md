@@ -34,6 +34,7 @@
 ![](https://img.shields.io/badge/-GraphQL-E00097?style=flat-square&logo=graphql&logoColor=ffffff)
 ![](https://img.shields.io/badge/-Git-E84D31?style=flat-square&logo=git&logoColor=ffffff)
 ![](https://img.shields.io/badge/-Jest-C21325?style=flat-square&logo=jest&logoColor=ffffff)
+![](https://img.shields.io/badge/-Testing%20Library-F54544?style=flat-square&logo=testing-library&logoColor=ffffff)
 ![](https://img.shields.io/badge/-Cypress-40C38E?style=flat-square&logo=cypress&logoColor=ffffff)
 
 # 🧰 Tech stack of the website
