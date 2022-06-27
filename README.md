@@ -1,8 +1,4 @@
 <p align="center">
-   <img src="https://media.giphy.com/media/RnPRNP5ICPl6M/giphy.gif" width="600" />
-</p>
-
-<p align="center">
   <a href="https://twitter.com/fatihcandev">
     <img align="center" alt="Fatih's  | Twitter" width="25px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />
   </a>
