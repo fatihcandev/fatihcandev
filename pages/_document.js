@@ -15,6 +15,11 @@ class MyDocument extends Document {
             id="stitches"
             dangerouslySetInnerHTML={{ __html: getCssText() }}
           />
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://widgets.superpeer.com/widget.css"
+          />
           <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
           <meta
             name="description"

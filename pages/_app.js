@@ -11,11 +11,6 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Fatih Can | Front End Developer</title>
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="https://widgets.superpeer.com/widget.css"
-        />
       </Head>
       <Script src="https://widgets.superpeer.com/widget.js" />
       <Script id="superpeerWidget">
