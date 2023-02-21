@@ -14,7 +14,7 @@ export default [
   {
     label: 'Check out my resume',
     icon: <FileTextOutlined />,
-    href: 'https://docs.google.com/document/d/1SmMjxxQrKnHyS4Tk1sQeaI88VH7C0D21REJuEKz-OsU/edit?usp=sharing',
+    href: 'https://read.cv/fatihcandev',
   },
   {
     label: 'Check out my profile',
