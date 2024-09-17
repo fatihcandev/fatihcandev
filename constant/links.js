@@ -14,7 +14,7 @@ export default [
   {
     label: 'Check out my resume',
     icon: <FileTextOutlined />,
-    href: 'https://read.cv/fatihcandev',
+    href: 'https://fatihcan.dev/resume',
   },
   {
     label: 'Check out my profile',
