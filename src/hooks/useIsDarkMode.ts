@@ -9,18 +9,20 @@ const useIsDarkMode = () => {
       '(prefers-color-scheme: dark)'
     ).matches;
 
-    if (savedTheme === 'dark' || prefersDark) {
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
       document.documentElement.classList.add('dark');
       setIsDarkMode(true);
     }
 
     const handleSystemThemeChange = (e: MediaQueryListEvent) => {
-      if (e.matches) {
-        document.documentElement.classList.add('dark');
-        setIsDarkMode(true);
-      } else {
-        document.documentElement.classList.remove('dark');
-        setIsDarkMode(false);
+      if (!savedTheme) {
+        if (e.matches) {
+          document.documentElement.classList.add('dark');
+          setIsDarkMode(true);
+        } else {
+          document.documentElement.classList.remove('dark');
+          setIsDarkMode(false);
+        }
       }
     };
 
