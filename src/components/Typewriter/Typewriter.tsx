@@ -18,7 +18,6 @@ const Typewriter = ({
 }: TypewriterProps) => {
   const [currentText, setCurrentText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [showBlink, setShowBlink] = useState(true);
 
   useEffect(() => {
     if (currentIndex < text.length) {
@@ -34,7 +33,6 @@ const Typewriter = ({
   useEffect(() => {
     if (currentText.length === text.length) {
       onComplete?.();
-      setShowBlink(false);
     }
   }, [currentText.length, onComplete, text.length]);
 
@@ -42,10 +40,7 @@ const Typewriter = ({
     <div
       className={classNames(
         'flex w-fit relative font-bold typewriter',
-        className,
-        {
-          showBlink,
-        }
+        className
       )}
     >
       {currentText}
