@@ -1,0 +1,40 @@
+.nameTitleContainer.slideUp {
+  animation: slideUp 0.5s ease forwards;
+  animation-delay: 0.25s;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-45px);
+  }
+}
+
+.fadeInAnimation {
+  animation: fadeIn 0.3s ease forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+.letsConnectMenu {
+  animation: slideFromTop 0.3s ease forwards;
+}
+
+@keyframes slideFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

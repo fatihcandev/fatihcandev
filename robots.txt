@@ -1,0 +1,15 @@
+# Allow all bots to access the main content
+User-agent: *
+Allow: /
+
+# Block access to unnecessary folders and assets that don’t need indexing
+Disallow: /static/
+Disallow: /assets/
+Disallow: /public/
+Disallow: /node_modules/
+
+# Block Vite HMR (Hot Module Replacement) updates for dev environments
+Disallow: /@vite/
+
+# If using client-side routing, prevent bots from indexing dynamically created routes directly
+# Only allow bots to access pages through entry points

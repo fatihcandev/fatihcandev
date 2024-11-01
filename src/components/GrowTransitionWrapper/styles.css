@@ -1,0 +1,33 @@
+.growTransition {
+  animation: growFromCenter 1s ease;
+}
+
+.growTransitionDark {
+  animation: growTransitionDark 1s ease;
+}
+
+@keyframes growFromCenter {
+  from {
+    transform: scale(0.1);
+    border-radius: 50%;
+    @apply bg-gray-200;
+  }
+  to {
+    transform: scale(1);
+    border-radius: 0;
+    @apply bg-gray-100;
+  }
+}
+
+@keyframes growTransitionDark {
+  from {
+    transform: scale(0.1);
+    border-radius: 50%;
+    @apply bg-gray-800;
+  }
+  to {
+    transform: scale(1);
+    border-radius: 0;
+    @apply bg-gray-900;
+  }
+}
