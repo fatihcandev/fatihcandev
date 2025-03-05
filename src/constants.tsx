@@ -17,7 +17,7 @@ export const experiences: IExperience[] = [
       websiteUrl: 'https://veton.ai/',
     },
     startDate: 'Nov 2024',
-    endDate: 'Present',
+    endDate: 'Mar 2025',
     details: (
       <ul className="text-xs list-disc pl-3">
         <li>
