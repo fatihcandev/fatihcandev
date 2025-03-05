@@ -10,7 +10,7 @@ import { IExperience } from './types';
 
 export const experiences: IExperience[] = [
   {
-    title: 'Lead Frontend Developer',
+    title: 'Senior Frontend Developer',
     organization: {
       name: 'veton.ai',
       logo: VetonLogo,
@@ -21,7 +21,7 @@ export const experiences: IExperience[] = [
     details: (
       <ul className="text-xs list-disc pl-3">
         <li>
-          Serve as Lead Frontend Developer responsible for developing and
+          Serve as the first hire Frontend Developer responsible for developing and
           scaling the product, establishing best practices, and ensuring code
           quality for a seamless user experience.
         </li>
